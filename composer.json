@@ -1,0 +1,26 @@
+{
+    "name": "shortdramadb/nativephp-parallax",
+    "description": "NativePHP Mobile plugin: a native parallax container whose content moves slower than the page scrolls",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "nativephp/mobile": "^4.0",
+        "nativephp/mobile-ui": ">=0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shortdramadb\\MobileParallax\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shortdramadb\\MobileParallax\\ParallaxServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    }
+}

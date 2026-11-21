@@ -1,0 +1,46 @@
+{
+    "name": "shortdramadb/nativephp-parallax",
+    "version": "1.0.0",
+    "description": "A native parallax container for NativePHP Mobile: its content moves slower than the page scrolls",
+    "namespace": "Parallax",
+    "keywords": ["parallax", "scroll", "hero", "ui"],
+    "category": "ui",
+    "license": "MIT",
+    "pricing": {
+        "type": "free"
+    },
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "components": [
+        {
+            "type": "parallax",
+            "element": "Shortdramadb\\MobileParallax\\Elements\\Parallax",
+            "blade": "Shortdramadb\\MobileParallax\\Components\\Parallax",
+            "android_renderer": "com.shortdramadb.plugins.mobile_parallax.ParallaxRenderer",
+            "ios_renderer": "ParallaxRenderer",
+            "self_closing": false
+        }
+    ],
+    "bridge_functions": [],
+    "android": {
+        "min_version": 26,
+        "permissions": [],
+        "repositories": [],
+        "dependencies": {
+            "implementation": []
+        }
+    },
+    "ios": {
+        "min_version": "17.0",
+        "permissions": [],
+        "repositories": [],
+        "dependencies": {
+            "swift_packages": [],
+            "pods": []
+        }
+    },
+    "events": [],
+    "service_provider": "Shortdramadb\\MobileParallax\\ParallaxServiceProvider"
+}
